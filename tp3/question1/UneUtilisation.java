@@ -19,7 +19,11 @@ public class UneUtilisation {
 		try {
 			p1.empiler(new PolygoneRegulier(4,100));
 			// ....
-			String s = (String) p1.depiler(); // vérifiez qu'une exception se
+			Object o= p1.depiler();
+			String s=o.toString();
+			
+			///java.lang.ClassCastException: question1.PolygoneRegulier cannot be cast to java.lang.String///
+			//String s = (String) p1.depiler(); // vérifiez qu'une exception se
 												// produit
 		} catch (Exception e) {
 			e.printStackTrace();
