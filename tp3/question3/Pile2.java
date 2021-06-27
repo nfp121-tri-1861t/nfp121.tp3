@@ -82,8 +82,8 @@ public class Pile2<T> implements PileI<T>{
         return this.stk.size() == this.capacité;
     }
     
-    
-	public boolean equals(Object o){
+
+    public boolean equals(Object o){
         if( this== o ){
             return true;
         }
@@ -91,7 +91,7 @@ public class Pile2<T> implements PileI<T>{
             return false;
         }
         Pile2 p1 = (Pile2)o;
-
+    
         if (p1.taille() == this.taille() && p1.capacite() == this.capacite()){
             boolean estEgale = false;
             for(int i= stk.size()-1; i>=0 ; i--){
@@ -102,16 +102,16 @@ public class Pile2<T> implements PileI<T>{
                         existe = true;
                     }
                 }
-                if(existe){
-                    estEgale = true;
-                } else{
-                    return false;
+                    if(existe){
+                        estEgale = true;
+                    } else{
+                        return false;
+                    }
+    
                 }
-
+                return true;
             }
-            return true;
-        }
-        return false;
+            return false;
     }
 
     

@@ -1,12 +1,12 @@
 #BlueJ package file
-dependency1.from=Pile2
+dependency1.from=UneUtilisation
 dependency1.to=PileI
 dependency1.type=UsesDependency
 dependency2.from=UneUtilisation
-dependency2.to=PileI
+dependency2.to=Pile2
 dependency2.type=UsesDependency
-dependency3.from=UneUtilisation
-dependency3.to=Pile2
+dependency3.from=Pile2
+dependency3.to=PileI
 dependency3.type=UsesDependency
 objectbench.height=122
 objectbench.width=1342

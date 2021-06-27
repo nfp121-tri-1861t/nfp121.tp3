@@ -71,7 +71,10 @@ public class Pile implements PileI {
          return this.ptr == this.zone.length;
     }
 
-    public boolean equals(Object o) {          
+    public boolean equals(Object o) {   
+         if( this== o ){
+            return true;
+        }
         if(!(o instanceof Pile)){
             return false;
         }

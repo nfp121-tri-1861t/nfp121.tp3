@@ -47,7 +47,7 @@ public class IHMPile extends JFrame implements ActionListener{
             }
         } else {
             try {
-                //sommet.setText(Integer.toString(p.depiler()));
+                //sommet.setText(Integer.toString(p.depiler())); // à modiifer
                 sommet.setText(p.depiler().toString());
                 contenu.setText(p.toString());
             } catch (PileVideException e) {

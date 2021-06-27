@@ -85,7 +85,10 @@ public class Pile2 implements PileI {
         return s + "]";
     }
 
-    public boolean equals(Object o) {            
+    public boolean equals(Object o) {  
+        if( this== o ){
+            return true;
+        }
         if(!(o instanceof Pile2)){
             return false;
         }
